@@ -10,7 +10,7 @@
     "Twitch"
   ],
   "author": "LeonTM",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "node-fetch": "^3.3.1"
   }
