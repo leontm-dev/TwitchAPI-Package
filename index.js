@@ -27,4 +27,39 @@ class TwitchApiClient {
         })
         this.token = token;
     };
+    ads_startCommercial(broadcaster_id, length) {
+        if (typeof broadcaster_id === String) {
+            if (typeof length === Number) {
+                if (broadcaster_id != "") {
+                    fetch("https://api.twitch.tv/helix/channels/commercial",
+                        {
+                            method: "POST",
+                            headers: {
+                                "Authorization": `Bearer ${this.token}`,
+                                "Client-Id": this.client_id,
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                "broadcaster_id": `${broadcaster_id}`,
+                                "length": parseInt(length)
+                            })
+                        }
+                    )
+                    .then(res => res.json())
+                    .then(data => {
+                        return data
+                    })
+                    .catch(err => {
+                        return new Error(err)
+                    })
+                } else {
+                    return new Error("ValueError: broadcaster_id is not defined!")
+                }
+            } else {
+                return new Error("TypeError: length must be an integer!");
+            }
+        } else {
+            return new Error("TypeError: broadcaster_id must be a string!");
+        }
+    }
 }
