@@ -1,6 +1,6 @@
 {
   "name": "twitchapi-package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is an unofficial TwitchAPI package to easily interact with the twitch api",
   "main": "index.js",
   "scripts": {
