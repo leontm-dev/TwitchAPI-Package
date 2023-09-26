@@ -11,7 +11,7 @@ import { UserId, ApiToken, ClientId } from "./types";
 import AdsClass from "./subclasses/ads";
 import AnalyticsClass from "./subclasses/analytics";
 
-class TwitchApiClient {
+export default class TwitchApiClient {
   /**
    *
    * @param {String} client_id - The client-id of your Twitch Application
