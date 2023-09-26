@@ -19,5 +19,8 @@ interface getExtensionAnalyticsResponse {
       };
     }
   ];
+  pagination: {
+    cursor: string;
+  };
 }
 export { startCommercialResponse, getExtensionAnalyticsResponse };
