@@ -1,13 +1,5 @@
 import { UserId, ApiToken, ClientId } from "../types";
-interface startCommercialResponse {
-  data: [
-    {
-      length: number;
-      message: string;
-      retry_after: number;
-    }
-  ];
-}
+import { startCommercialResponse } from "../interfaces";
 export default class Ads {
   apiToken = "";
   clientId = "";
