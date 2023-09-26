@@ -10,7 +10,7 @@ export default class Ads {
   /**
    * @description Starts a commercial on the specified channel.
    * @param { UserId } broadcaster_id The ID of the partner or affiliate broadcaster that wants to run the commercial. This ID must match the user ID found in the OAuth token.
-   * @param { Number } length The length of the commercial to run, in seconds. Twitch tries to serve a commercial that’s the requested length, but it may be shorter or longer. The maximum length you should request is 180 seconds.
+   * @param { number } length The length of the commercial to run, in seconds. Twitch tries to serve a commercial that’s the requested length, but it may be shorter or longer. The maximum length you should request is 180 seconds.
    */
   startCommercial(broadcaster_id: UserId, length: number) {
     fetch("https://api.twitch.tv/helix/channels/commercial", {
