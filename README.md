@@ -1,6 +1,6 @@
 # TwitchAPI-Package
 
-This is an official package for the easy use of the TwitchAPI. This is not supported by Twitch/Amazon in any kind!
+This is an unofficial package for the TwitchAPI. With this package you can easily interact with the TwitchAPI, but you still need a twitch app and a user oauth token. This package is not directly from Twitch or linked to the company itself.
 
 ## How to use this package
 
