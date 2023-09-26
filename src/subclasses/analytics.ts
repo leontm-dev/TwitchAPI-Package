@@ -3,7 +3,7 @@ import {
   getExtensionAnalyticsResponse,
   getGameAnalyticsReponse,
 } from "../interfaces";
-class Analytics {
+export default class Analytics {
   apiToken = "";
   clientId = "";
   constructor(token: ApiToken, id: ClientId) {
