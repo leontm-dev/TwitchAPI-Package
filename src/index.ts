@@ -333,5 +333,3 @@ class TwitchApiClient {
   //   videos_deleteVideos() {}
   //   whispers_sendWhisper() {}
 }
-let lol = new TwitchApiClient("", "");
-lol.Ads.startCommercial;
