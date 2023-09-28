@@ -9,8 +9,20 @@
     "build": "tsc"
   },
   "keywords": [
-    "Twitch"
+    "Twitch",
+    "Types",
+    "JS",
+    "Node",
+    "API"
   ],
+  "funding": {
+    "type": "BuyMeACoffee",
+    "url": "https://www.buymeacoffee.com/leontm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leontm-dev/spiky.js"
+  },
   "author": "LeonTM",
   "license": "MIT",
   "dependencies": {
